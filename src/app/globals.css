@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #1a1a1a; }
+::-webkit-scrollbar-thumb:hover { background: #00d4ff; }
+
+/* ── Selection ─────────────────────────────────────────────────────────────── */
+::selection {
+  background-color: #00d4ff;
+  color: #050505;
+}
+
+/* ── Smooth scroll ─────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Cursor ─────────────────────────────────────────────────────────────────── */
+*, html, body {
+  cursor: auto;
+}
+
+a, button, input, textarea, select, [role="button"] {
+  cursor: pointer;
+}
+
+/* ── Blink animation for terminal cursor ───────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
