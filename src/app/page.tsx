@@ -5,6 +5,8 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 import { studionet } from "genlayer-js/chains";
 import { createClient, createAccount } from "genlayer-js";
+import { studionet } from "genlayer-js/chains";
+import { createClient, createAccount } from "genlayer-js";
 
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -436,7 +438,7 @@ addLog(`> [Validator 3] Running LLM analysis...`);
 
 await genClient.waitForTransactionReceipt({
   hash: txHash,
-  status: "FINALIZED",
+  status: TransactionStatus.FINALIZED,
   retries: 60,
   interval: 5000,
 });
