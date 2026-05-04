@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.10",
-    "@react-native-async-storage/async-storage": "^3.0.2",
     "@tanstack/react-query": "^5.100.7",
     "genlayer-js": "^1.1.7",
     "next": "14.2.35",
