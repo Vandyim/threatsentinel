@@ -3,10 +3,9 @@
 import { useState, useRef } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
-import { studionet } from "genlayer-js/chains";
 import { createClient, createAccount } from "genlayer-js";
 import { studionet } from "genlayer-js/chains";
-import { createClient, createAccount } from "genlayer-js";
+import { TransactionStatus } from "genlayer-js/types";
 
 
 // ─── Constants ────────────────────────────────────────────────────────────────
