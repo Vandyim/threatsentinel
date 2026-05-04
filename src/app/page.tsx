@@ -425,6 +425,7 @@ function ActionZone() {
         address: CONTRACT_ADDRESS as `0x${string}`,
         functionName: "check_url",
         args: [url],
+        value: BigInt(0),
       });
 
 addLog(`> TX: ${txHash.slice(0, 16)}...${txHash.slice(-8)}`);
