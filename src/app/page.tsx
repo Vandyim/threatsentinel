@@ -106,7 +106,7 @@ function GridLines() {
 
 function Nav() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border-b border-[#1a1a1a] bg-[#050505]/90 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 border-b border-[#1a1a1a] bg-[#050505]/90 backdrop-blur-sm">
       <div className="flex items-center gap-2">
         <div className="w-2 h-2 rounded-full bg-[#00d4ff] animate-pulse" />
         <span className="font-mono text-sm text-[#00d4ff] tracking-widest uppercase">
@@ -377,6 +377,7 @@ function ActionZone() {
   const [verdict, setVerdict] = useState<Verdict | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [logLines, setLogLines] = useState<string[]>([]);
+  const [txHash, setTxHash] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const addLog = (line: string) => {
@@ -430,6 +431,7 @@ function ActionZone() {
       });
 
 addLog(`> TX: ${txHash.slice(0, 16)}...${txHash.slice(-8)}`);
+      setTxHash(txHash);
 addLog(`> Waiting for validator consensus...`);
 addLog(`> [Validator 1] Running LLM analysis...`);
 addLog(`> [Validator 2] Running LLM analysis...`);
@@ -584,11 +586,27 @@ await genClient.waitForTransactionReceipt({
                 <p className="font-sans text-[#888] text-sm leading-relaxed mb-4">
                   {verdict.reason}
                 </p>
-                <div className="border-t border-[#1a1a1a] pt-4 mt-4">
-                  <p className="font-mono text-xs text-[#666]">
-                    Verdict recorded onchain · Contract: {CONTRACT_ADDRESS.slice(0, 12)}...
-                  </p>
-                </div>
+                <div className="border-t border-[#1a1a1a] pt-4 mt-4 space-y-2">
+  <p className="font-mono text-xs text-[#666]">
+    Verdict recorded onchain · Contract: {CONTRACT_ADDRESS.slice(0, 12)}...
+  </p>
+  {txHash && (
+    <div className="flex flex-col gap-1">
+      <p className="font-mono text-xs text-[#444]">TX HASH:</p>
+      
+        href={`https://studio.genlayer.com/tx/${txHash}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-mono text-xs text-[#00d4ff] break-all hover:underline"
+      >
+        {txHash}
+      </a>
+      <p className="font-mono text-xs text-[#444]">
+        ↑ Click to verify on GenLayer Explorer
+      </p>
+    </div>
+  )}
+</div>
               </div>
             );
           })()}
