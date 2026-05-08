@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Drop any URL. Multiple AI validators reach consensus on whether the site is safe, phishing, or malicious — verdict recorded onchain forever.",
   openGraph: {
     title: "ThreatSentinel",
-    description: "Catch the scam before it catches you.",
+    description: "Don't click blind. Let the blockchain decide",
     siteName: "ThreatSentinel",
   },
 };
