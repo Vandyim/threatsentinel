@@ -201,7 +201,7 @@ function Hero() {
           </a>
           <a
             href="#how-it-works"
-            className="px-8 py-4 border border-[#1a1a1a] text-[#999] font-mono text-sm tracking-widest uppercase hover:border-[#666] hover:text-[#e8e8e8] transition-all duration-200 rounded=full"
+            className="px-8 py-4 border border-[#1a1a1a] text-[#999] font-mono text-sm tracking-widest uppercase hover:border-[#666] hover:text-[#e8e8e8] transition-all duration-200 rounded-full"
           >
             How it works
           </a>
