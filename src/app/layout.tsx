@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "ThreatSentinel — Onchain URL Threat Analysis",
   description:
-    "Drop any URL. Multiple AI validators reach consensus on whether the site is safe, phishing, or malicious — verdict recorded onchain forever.",
+    "Paste any URL. The blockchain jury delivers its verdict in seconds — permanently, tamper-proof, forever.",
   openGraph: {
     title: "ThreatSentinel",
     description: "Don't click blind. Let the blockchain decide",
