@@ -593,7 +593,7 @@ await genClient.waitForTransactionReceipt({
   {txHash && (
     <div className="flex flex-col gap-1">
       <p className="font-mono text-xs text-[#444]">TX HASH:</p>
-      
+      <a
         href={`https://studio.genlayer.com/tx/${txHash}`}
         target="_blank"
         rel="noopener noreferrer"
