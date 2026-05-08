@@ -591,21 +591,25 @@ await genClient.waitForTransactionReceipt({
     Verdict recorded onchain · Contract: {CONTRACT_ADDRESS.slice(0, 12)}...
   </p>
   {txHash && (
-    <div className="flex flex-col gap-1">
-      <p className="font-mono text-xs text-[#444]">TX HASH:</p>
-      <a
-        href={`https://studio.genlayer.com/tx/${txHash}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="font-mono text-xs text-[#00d4ff] break-all hover:underline"
-      >
-        {txHash}
-      </a>
-      <p className="font-mono text-xs text-[#444]">
-        ↑ Click to verify on GenLayer Explorer
-      </p>
-    </div>
-  )}
+  <div className="flex flex-col gap-2 mt-3">
+    <p className="font-mono text-xs text-[#555] tracking-widest">
+      TRANSACTION HASH
+    </p>
+
+    <a
+      href={`https://explorer-bradbury.genlayer.com/tx/${txHash}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-mono text-xs text-[#00d4ff] break-all hover:text-[#b8e600] hover:underline transition-colors"
+    >
+      {txHash}
+    </a>
+
+    <p className="font-mono text-[11px] text-[#666]">
+      Verify on GenLayer Explorer →
+    </p>
+  </div>
+)}
 </div>
               </div>
             );
