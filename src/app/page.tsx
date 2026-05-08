@@ -195,13 +195,13 @@ function Hero() {
         <div className="flex flex-wrap items-center gap-4">
           <a
             href="#analyze"
-            className="px-8 py-4 bg-[#00d4ff] text-[#050505] font-mono text-sm font-bold tracking-widest uppercase hover:bg-[#b8e600] transition-colors duration-200"
+            className="px-8 py-4 bg-[#00d4ff] text-[#050505] font-mono text-sm font-bold tracking-widest uppercase hover:bg-[#b8e600] transition-colors duration-200 rounded-full"
           >
             Analyze a URL →
           </a>
           <a
             href="#how-it-works"
-            className="px-8 py-4 border border-[#1a1a1a] text-[#999] font-mono text-sm tracking-widest uppercase hover:border-[#666] hover:text-[#e8e8e8] transition-all duration-200"
+            className="px-8 py-4 border border-[#1a1a1a] text-[#999] font-mono text-sm tracking-widest uppercase hover:border-[#666] hover:text-[#e8e8e8] transition-all duration-200 rounded=full"
           >
             How it works
           </a>
