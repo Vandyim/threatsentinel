@@ -178,13 +178,13 @@ function Hero() {
       <div className="max-w-5xl">
         <h1 className="font-serif font-black leading-[0.9] tracking-tight mb-8">
           <span className="block text-[clamp(3rem,10vw,8rem)] text-[#e8e8e8]">
-            Catch the scam
+            Don't click
           </span>
           <span className="block text-[clamp(3rem,10vw,8rem)] text-[#00d4ff] italic">
-            before
+            blind
           </span>
           <span className="block text-[clamp(3rem,10vw,8rem)] text-[#e8e8e8]">
-            it catches you.
+            Let the blockchaindecide.
           </span>
         </h1>
 
