@@ -184,7 +184,7 @@ function Hero() {
             blind
           </span>
           <span className="block text-[clamp(3rem,10vw,8rem)] text-[#e8e8e8]">
-            Let the blockchaindecide.
+            Let the blockchain decide.
           </span>
         </h1>
 
