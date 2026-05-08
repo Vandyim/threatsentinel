@@ -189,9 +189,7 @@ function Hero() {
         </h1>
 
         <p className="max-w-lg text-[#999] font-sans text-lg leading-relaxed mb-10">
-          Drop any URL. In seconds, multiple AI validators reach consensus on
-          whether the site is authentic, suspicious, or a scam — and the verdict
-          is recorded onchain forever.
+          Paste any URL. The blockchain jury delivers its verdict in seconds — permanently, tamper-proof, forever.
         </p>
 
         <div className="flex flex-wrap items-center gap-4">
