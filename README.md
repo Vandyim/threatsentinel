@@ -29,4 +29,4 @@ You need test GEN tokens to submit analyses.
 `0xfcCA520648ad51Aa8B1e14B2d0DBB5D9e42101cA`
 
 ## Built by
-[@Vandyim](https://github.com/Vandyim) — powered by GenLayer
+[@Vandyim1](https://github.com/Vandyim) — powered by GenLayer
