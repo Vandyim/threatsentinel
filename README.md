@@ -1,4 +1,4 @@
-# 🛡️ ThreatSentinel
+# ThreatSentinel
 
 > The first onchain URL threat detector. No server. No bias. No tampering.
 
